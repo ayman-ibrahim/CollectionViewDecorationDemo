@@ -12,6 +12,13 @@
 		10A8F71622F7706F00747800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A8F71422F7706F00747800 /* Main.storyboard */; };
 		10A8F71822F7707100747800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A8F71722F7707100747800 /* Assets.xcassets */; };
 		10A8F71B22F7707100747800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A8F71922F7707100747800 /* LaunchScreen.storyboard */; };
+		10A8F72B22F770CE00747800 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F72222F770CE00747800 /* CollectionViewFlowLayout.swift */; };
+		10A8F72C22F770CE00747800 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F72422F770CE00747800 /* CollectionViewCell.swift */; };
+		10A8F72D22F770CE00747800 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F72522F770CE00747800 /* Header.swift */; };
+		10A8F72E22F770CE00747800 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A8F72622F770CE00747800 /* Header.xib */; };
+		10A8F72F22F770CE00747800 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F72822F770CE00747800 /* Presenter.swift */; };
+		10A8F73022F770CE00747800 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F72A22F770CE00747800 /* UIView.swift */; };
+		10A8F73522F772FD00747800 /* DecorationReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A8F73422F772FD00747800 /* DecorationReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		10A8F71722F7707100747800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A8F71A22F7707100747800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A8F71C22F7707100747800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A8F72222F770CE00747800 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		10A8F72422F770CE00747800 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		10A8F72522F770CE00747800 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		10A8F72622F770CE00747800 /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		10A8F72822F770CE00747800 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		10A8F72A22F770CE00747800 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		10A8F73422F772FD00747800 /* DecorationReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorationReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,68 @@
 			isa = PBXGroup;
 			children = (
 				10A8F71022F7706F00747800 /* AppDelegate.swift */,
+				10A8F72922F770CE00747800 /* Extensions */,
+				10A8F72322F770CE00747800 /* Views */,
+				10A8F72722F770CE00747800 /* Presenter */,
 				10A8F71222F7706F00747800 /* ViewController.swift */,
+				10A8F72222F770CE00747800 /* CollectionViewFlowLayout.swift */,
 				10A8F71422F7706F00747800 /* Main.storyboard */,
 				10A8F71722F7707100747800 /* Assets.xcassets */,
 				10A8F71922F7707100747800 /* LaunchScreen.storyboard */,
 				10A8F71C22F7707100747800 /* Info.plist */,
 			);
 			path = CollectionViewDecorationDemo;
+			sourceTree = "<group>";
+		};
+		10A8F72322F770CE00747800 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F73322F772D800747800 /* DecorationView */,
+				10A8F73222F7725200747800 /* Header */,
+				10A8F73122F7724800747800 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10A8F72722F770CE00747800 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F72822F770CE00747800 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		10A8F72922F770CE00747800 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F72A22F770CE00747800 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10A8F73122F7724800747800 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F72422F770CE00747800 /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		10A8F73222F7725200747800 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F72522F770CE00747800 /* Header.swift */,
+				10A8F72622F770CE00747800 /* Header.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		10A8F73322F772D800747800 /* DecorationView */ = {
+			isa = PBXGroup;
+			children = (
+				10A8F73422F772FD00747800 /* DecorationReusableView.swift */,
+			);
+			path = DecorationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A8F72E22F770CE00747800 /* Header.xib in Resources */,
 				10A8F71B22F7707100747800 /* LaunchScreen.storyboard in Resources */,
 				10A8F71822F7707100747800 /* Assets.xcassets in Resources */,
 				10A8F71622F7706F00747800 /* Main.storyboard in Resources */,
@@ -135,7 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A8F72F22F770CE00747800 /* Presenter.swift in Sources */,
+				10A8F72D22F770CE00747800 /* Header.swift in Sources */,
+				10A8F72B22F770CE00747800 /* CollectionViewFlowLayout.swift in Sources */,
+				10A8F73022F770CE00747800 /* UIView.swift in Sources */,
 				10A8F71322F7706F00747800 /* ViewController.swift in Sources */,
+				10A8F73522F772FD00747800 /* DecorationReusableView.swift in Sources */,
+				10A8F72C22F770CE00747800 /* CollectionViewCell.swift in Sources */,
 				10A8F71122F7706F00747800 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
