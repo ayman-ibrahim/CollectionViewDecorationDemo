@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="OMX-3u-10O" customClass="Header" customModule="CollectionViewDecorationView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2u-VM-LCb">
+                    <rect key="frame" x="20" y="16" width="439" height="98"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o41-QO-Rwh">
+                            <rect key="frame" x="198.5" y="38.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="o41-QO-Rwh" firstAttribute="centerX" secondItem="Q2u-VM-LCb" secondAttribute="centerX" id="0hh-se-ilT"/>
+                        <constraint firstItem="o41-QO-Rwh" firstAttribute="centerY" secondItem="Q2u-VM-LCb" secondAttribute="centerY" id="DBY-tQ-8VA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Q2u-VM-LCb" secondAttribute="bottom" id="HlO-6T-7BF"/>
+                <constraint firstItem="Q2u-VM-LCb" firstAttribute="leading" secondItem="RKR-oO-IxX" secondAttribute="leading" constant="20" id="eq0-eR-2Qb"/>
+                <constraint firstAttribute="trailing" secondItem="Q2u-VM-LCb" secondAttribute="trailing" constant="20" id="hZ5-UT-HWh"/>
+                <constraint firstItem="Q2u-VM-LCb" firstAttribute="top" secondItem="OMX-3u-10O" secondAttribute="top" constant="16" id="soK-Bn-rVb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RKR-oO-IxX"/>
+            <connections>
+                <outlet property="lblTitle" destination="o41-QO-Rwh" id="zqr-8d-3P0"/>
+                <outlet property="viewParent" destination="Q2u-VM-LCb" id="cTp-yP-aJX"/>
+            </connections>
+            <point key="canvasLocation" x="-399.27536231884062" y="122.54464285714285"/>
+        </collectionReusableView>
+    </objects>
+</document>
